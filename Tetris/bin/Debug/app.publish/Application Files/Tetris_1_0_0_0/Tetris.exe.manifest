@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Tetris.exe" version="1.0.0.0" publicKeyToken="ca162a6604a0daa7" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Assets\Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Tetris" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Tetris.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tetris.exe" size="2765784">
+      <assemblyIdentity name="Tetris" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HdhyAnag7N/34sNQLO7ds6dpbZCT9WjthAHca+1+aeo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Assets\Icon.ico" size="117411">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6Sk5ZPixxLK7hDSe9sWTm29THDK2XuVBwLWfujrAUvQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Tetris.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-A30M0U6\User" issuerKeyHash="d01da200229f48336b6cb8b74f8f33531a790f77" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>gEy6vgaW41gknnNZ0V7L2KB1TpKZuybNtHEGRgK4p00=</DigestValue></Reference></SignedInfo><SignatureValue>Xrcnd8dZetynRVswwk0Nz3jfFVnO9rCt3wKicqOjwuDAD1OLqPC1EeRNEGKQg8xWxUDHWZD7/HmWZPLuXFzC4qb6RNrmqTR6IUiYs1ew8qRTlQn2oUONZj52HsBBwopaGsb/aD6gu+Gq4KN2Q1X1Z1+fTymmYAd0z5mSE8/sqEk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>mOA7gHVfrrG64kKXDY387FQI0IJSTNYnEu/wQlx9hNnYf96yPkErpFHdwdmki3ND2fOIcqOWlMl7HQ3whcL90r8Kk+goMuZVy4J7H3xPuyxbm4xPtHgfD6j3pa8FtFWhy+DTh5p82CQuwvM/R23oJi2CdoHJQm4OhvThdTGvpBE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4da7b802460671b4cd26bb99924e75a0d8cb5ed159739e2458e39606beba4c80" Description="" Url=""><as:assemblyIdentity name="Tetris.exe" version="1.0.0.0" publicKeyToken="ca162a6604a0daa7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-A30M0U6\User</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zSKQxQIP466Rx1467+wbzXNWfo4SN1r0sXAMKZCnGHU=</DigestValue></Reference></SignedInfo><SignatureValue>LV/JjI8gna54/+C1yXTPqIx8uqq+40bvID6mFWoHV3+Jg8pjVYRTrr4Va6Uq/kybYvi7+SJglSB7o14xGdiuJ9UqT3IJga3wymoE3CpADh2osTH8CSCryflix3PhWvSA0hp41ZyvFR5peqG9d1/GMDNgSx0CsXELcxs23X2m/xM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>mOA7gHVfrrG64kKXDY387FQI0IJSTNYnEu/wQlx9hNnYf96yPkErpFHdwdmki3ND2fOIcqOWlMl7HQ3whcL90r8Kk+goMuZVy4J7H3xPuyxbm4xPtHgfD6j3pa8FtFWhy+DTh5p82CQuwvM/R23oJi2CdoHJQm4OhvThdTGvpBE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQTmte7yVHk7pOS6KjbKxtTDANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAEEAMwAwAE0AMABVADYAXABVAHMAZQByMB4XDTI0MDgwMzE1Mjk0NloXDTI1MDgwMzIxMjk0NlowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBBADMAMABNADAAVQA2AFwAVQBzAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAmOA7gHVfrrG64kKXDY387FQI0IJSTNYnEu/wQlx9hNnYf96yPkErpFHdwdmki3ND2fOIcqOWlMl7HQ3whcL90r8Kk+goMuZVy4J7H3xPuyxbm4xPtHgfD6j3pa8FtFWhy+DTh5p82CQuwvM/R23oJi2CdoHJQm4OhvThdTGvpBECAwEAATANBgkqhkiG9w0BAQsFAAOBgQA5REXL5ofm5+hAf19odGMjYtjouxRdjJ0yCtw09Uu2N9b9GDcd9rDFfujXfEZHbNlTeBwTOvQ6tjMjoM1AHp/trgNABGlBWSemo2hQ9owhuRnflfRFUSCL8zuITyipmj3Uiub8lq4Bp8AHD6uzxEa6L2/OU3UEm2b8mKQqRctndw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
